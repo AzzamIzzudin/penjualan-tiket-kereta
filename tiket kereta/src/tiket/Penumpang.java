@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tiket;
 import com.mysql.jdbc.Connection;
 import java.io.FileWriter;
@@ -81,11 +77,11 @@ public class Penumpang extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Id", "Nama", "Alamat", "Kereta", "Gerbong", "Stasiun Awal", "Stasiun Tujuan", "Jam Berangkat", "Jam Tiba", "Tanggal", "Dewasa", "Anak", "Total"
+                "Id", "Nama", "Alamat", "Kereta", "Gerbong", "Stasiun Tujuan", "Jam Berangkatl", "Jam Tiba", "Tanggal", "Dewasa", "Anak", "Total"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false, true, false, true
+                false, false, false, false, false, false, false, false, false, true, false, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -111,6 +107,7 @@ public class Penumpang extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 0, 51));
         jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Print");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,7 +117,8 @@ public class Penumpang extends javax.swing.JFrame {
 
         Hapus.setBackground(new java.awt.Color(255, 102, 0));
         Hapus.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        Hapus.setText("Hapus");
+        Hapus.setForeground(new java.awt.Color(255, 255, 255));
+        Hapus.setText("Hapus Semua Data");
         Hapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HapusActionPerformed(evt);
@@ -140,9 +138,9 @@ public class Penumpang extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(187, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(220, 220, 220)
-                .addComponent(Hapus, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(204, 204, 204))
+                .addGap(196, 196, 196)
+                .addComponent(Hapus, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(188, 188, 188))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addComponent(jLabel1)

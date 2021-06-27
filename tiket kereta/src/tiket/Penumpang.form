@@ -90,9 +90,9 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace pref="187" max="32767" attributes="0"/>
                   <Component id="jButton1" min="-2" pref="142" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="220" max="-2" attributes="0"/>
-                  <Component id="Hapus" min="-2" pref="142" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="196" max="-2" attributes="0"/>
+                  <Component id="Hapus" min="-2" pref="182" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
@@ -172,15 +172,14 @@
                       <Color blue="33" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="13" rowCount="0">
+                      <Table columnCount="12" rowCount="0">
                         <Column editable="false" title="Id" type="java.lang.Object"/>
                         <Column editable="false" title="Nama" type="java.lang.Object"/>
                         <Column editable="false" title="Alamat" type="java.lang.Object"/>
                         <Column editable="false" title="Kereta" type="java.lang.Object"/>
                         <Column editable="false" title="Gerbong" type="java.lang.Object"/>
-                        <Column editable="false" title="Stasiun Awal" type="java.lang.Object"/>
                         <Column editable="false" title="Stasiun Tujuan" type="java.lang.Object"/>
-                        <Column editable="false" title="Jam Berangkat" type="java.lang.Object"/>
+                        <Column editable="false" title="Jam Berangkatl" type="java.lang.Object"/>
                         <Column editable="false" title="Jam Tiba" type="java.lang.Object"/>
                         <Column editable="false" title="Tanggal" type="java.lang.Object"/>
                         <Column editable="true" title="Dewasa" type="java.lang.Object"/>
@@ -280,6 +279,9 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="14" style="0"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Print"/>
           </Properties>
           <Events>
@@ -294,7 +296,10 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="14" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Hapus"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Hapus Semua Data"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HapusActionPerformed"/>
